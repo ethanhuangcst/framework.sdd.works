@@ -1,13 +1,14 @@
----
-title: Scrum in SDD
-type: framework-guide
-status: review
-as_of: 2026-09-22
-related:
-  - sdd-scrum-practices.md
-  - product-backlog.md
-  - artifacts-map.md
----
+# Scrum in SDD
+
+本文定义 Scrum in SDD: 结合 Scrum 和规格驱动开发（Spec-Driven Development, SDD），在 Harness Engineering 原则下使用 Agentic Programming。
+
+《Scrum 指南》定义 Scrum。本文不取代它。
+
+- **第一部分** 概述 2020 版《Scrum 指南》。该概述是基线。
+- **第二部分** 说明 Agentic Programming、Harness Engineering 和规格驱动开发。
+- **第三部分** 说明经典 Scrum 在这一设定下没有覆盖的内容。
+- **第四部分** 是定义：哪些保持不变，哪些新增，哪些改变。
+
 
 # **第一部分** 2020 版《Scrum 指南》摘要
 
@@ -287,6 +288,18 @@ Ken Schwaber 和 Jeff Sutherland 于 1995 年首次公开介绍 Scrum。《Scrum
 - **Test Automation**：自动运行单元测试、集成测试和端到端测试。
 - **Refactoring**：在不改变已定义行为的前提下改进代码结构。
 
+### 将 Scrum 与 SDD 集成
+
+**Scrum** 规定交付节奏。**SDD** 把 spec 作为 source of truth。
+
+- **Product Backlog**：需求和验收标准。
+- **Sprint Backlog**：本 Sprint 要实现的内容，以及由谁完成。
+- **Increment**：满足 spec 和 Definition of Done 的结果。
+- **Events**：Planning、Daily Scrum、Review 和 Retrospective 保留。人和 agents 都参与。
+- **Definition of Done**：一条规则，在条目完成前执行。
+- **Incremental delivery**：完成一个 Sprint 条目后，再开始下一个。
+- **Spec first**：行为变更从 spec 开始。Sprint 负责实现。
+
 ### 在这种方法中，人如何与 AI agents 协作
 
 **Humans** 负责定义并治理 **harness**；**AI agents** 在其中运行。人不仅定义**要做什么**，也定义 agents **可以如何工作**。
@@ -341,7 +354,7 @@ Ken Schwaber 和 Jeff Sutherland 于 1995 年首次公开介绍 Scrum。《Scrum
 - **工件路径定义与项目映射**：**artifacts-map.md**
 - **Spec 模板**：**architecture.md; design.md; test.md; deployment.md**
 
-## 在 sdd-scrum 中需要修改的 Scrum 概念
+## 在 Scrum in SDD 中需要修改的 Scrum 概念
 
 ### Scrum Team
 - **团队**可以小得多：通常是一名 **Product Owner** 加上几名 **full-stack engineers**，其中一人还兼任 **Scrum Master**。
@@ -363,7 +376,7 @@ Ken Schwaber 和 Jeff Sutherland 于 1995 年首次公开介绍 Scrum。《Scrum
 #### Scrum Master
 - **传统 Scrum Master 部分职责**可以分散到各项 **Scrum accountabilities** 中。
 - **AI agents** 可以支持**辅导、清除障碍、Scrum 事件、Product Goal 定义、Product Backlog 管理以及 Scrum 推广**。
-- 增加了新的职责，包括：**贯彻 Harness Engineering 原则、管理知识，并持续改进 sdd-scrum**。
+- 增加了新的职责，包括：**贯彻 Harness Engineering 原则、管理知识，并持续改进 Scrum in SDD**。
 
 ### Scrum 事件
 
@@ -412,12 +425,12 @@ Ken Schwaber 和 Jeff Sutherland 于 1995 年首次公开介绍 Scrum。《Scrum
 
 
 
-**第四部分** sdd-scrum 指南
-# **第四部分** sdd-scrum 指南
+**第四部分** Scrum in SDD 指南
+# **第四部分** Scrum in SDD 指南
 
 ## 目的
 
-本指南通过说明哪些内容保留、哪些新增、哪些变化，来定义 sdd-scrum。
+本指南通过说明哪些内容保留、哪些新增、哪些变化，来定义 Scrum in SDD。
 
 ## 适用对象
 
@@ -431,11 +444,11 @@ Ken Schwaber 和 Jeff Sutherland 于 1995 年首次公开介绍 Scrum。《Scrum
 
 - **Keep**：仍然有效的经典 Scrum 概念。
 - **Add**：在 Harness Engineering 原则下实施 SDD 所需的新概念。
-- **Modify**：在 sdd-scrum 中发生变化的经典 Scrum 概念。
+- **Modify**：在 Scrum in SDD 中发生变化的经典 Scrum 概念。
 
 ## 术语
 
-- **sdd-scrum**：在 Harness Engineering 原则下，为 SDD 调整后的 Scrum。
+- **Scrum in SDD**：在 Harness Engineering 原则下，为 SDD 调整后的 Scrum。
 - **Spec**：关于行为、约束和验收标准的 source of truth。
 - **Harness**：治理 agent 执行的运行时系统。
 - **Rule**：对执行的约束。
@@ -583,7 +596,7 @@ Ken Schwaber 和 Jeff Sutherland 于 1995 年首次公开介绍 Scrum。《Scrum
 - Definition of Done 作为一条 rule 来实现。
 - 它既可以适用于任务，也可以适用于 Increment。
 
-## sdd-scrum 的最小配置
+## Scrum in SDD 的最小配置
 
 - 一名 **Product Owner**
 - 一名兼职 **Scrum Master**

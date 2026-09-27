@@ -16,7 +16,7 @@ v.0.1.0
 
 - sdd-atdd — 驗收測試驅動開發：用使用者故事和驗收標準建立使用者故事地圖。
 - sdd-tdd — 測試驅動開發，極限編程中的工程實務。
-- sdd-new-project — 在智能體工具中依 SDD-Scrum 啟動專案，包括規格資料夾路徑等設定。
+- sdd-kickoff-project — 在智能體工具中依 SDD-Scrum 啟動專案，包括規格資料夾路徑等設定。
 - sdd-update-project — 在智能體工具中更新專案設定。
 - sdd-refine-pb — 梳理產品待辦：細化初始需求，建立 PBI，並補充使用者故事和驗收標準。
 - sdd-plan-sprint — 規劃衝刺：把 PBI 分配到各衝刺，檢查覆蓋與可追溯性，並把 PBI 拆成細粒度 SBI。
@@ -38,7 +38,7 @@ v.0.1.0
 
 ### sdd-scrum 框架
 
-- sdd-scrum-guide.md — SDD-Scrum 框架的單一事實來源。
+- scrum-in-sdd.md — SDD-Scrum 框架的單一事實來源。
 - sdd-scrum-practices.md — 開發者與 AI 智能體協作時，Harness Engineering 與 SDD 實務的單一事實來源。
 - artifacts-map.md — 產物路徑定義與專案對應。
 

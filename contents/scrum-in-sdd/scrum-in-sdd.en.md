@@ -1,13 +1,15 @@
----
-title: Scrum in SDD
-type: framework-guide
-status: review
-as_of: 2026-09-22
-related:
-  - sdd-scrum-practices.md
-  - product-backlog.md
-  - artifacts-map.md
----
+# Scrum in SDD
+
+This document defines how Scrum is adopted in Spec-Driven Development, with Agentic Programming under Harness Engineering principles.
+
+The Scrum Guide defines Scrum. This document does not replace it.
+
+- **Part I** summarizes the 2020 Scrum Guide. That summary is the baseline.
+- **Part II** names Agentic Programming, Harness Engineering, and Spec-Driven Development.
+- **Part III** states what classic Scrum does not cover in that setting.
+- **Part IV** is the definition: what stays, what is added, and what changes.
+
+
 
 # **Part I** The 2020 Scrum Guide Summary
 
@@ -287,6 +289,18 @@ In **SDD**, **eXtreme Programming (XP)** practices can be embedded in the **harn
 - **Test Automation**: automatically run unit, integration, and end-to-end tests.
 - **Refactoring**: improve code structure without changing specified behavior.
 
+### Integrating Scrum with SDD
+
+**Scrum** sets the delivery rhythm. **SDD** keeps the spec as the source of truth.
+
+- **Product Backlog**: requirements and acceptance criteria.
+- **Sprint Backlog**: what this sprint will make true, and who does it.
+- **Increment**: the result that meets the spec and the Definition of Done.
+- **Events**: Planning, Daily Scrum, Review, and Retrospective stay. Humans and agents both take part.
+- **Definition of Done**: a rule, applied before the item is done.
+- **Incremental delivery**: finish one sprint item before starting the next.
+- **Spec first**: a behavior change starts in the spec. The sprint implements it.
+
 ### How humans collaborate with AI agents in this approach
 
 **Humans** define and govern the **harness**; **AI agents** operate within it. Humans specify not only **what** should be built, but also **how** agents may work.
@@ -341,7 +355,7 @@ As there is no current need for **workflows** at this stage, this folder remains
 - **Artifact path definition and project mapping**: **artifacts-map.md**
 - **Engineering artifacts templates**: **architecture.md; design.md; test.md; deployment.md**
 
-## Scrum concepts that need to be modified in sdd-scrum
+## Scrum concepts that need to be modified in Scrum in SDD
 
 ### Scrum Team
 - **Teams** can be much smaller: often one **Product Owner** and a few **full-stack engineers**, with one also serving as **Scrum Master**.
@@ -363,7 +377,7 @@ As there is no current need for **workflows** at this stage, this folder remains
 #### Scrum Master
 - **Traditional Scrum Master responsibilities** can be distributed across **Scrum accountabilities**.
 - **AI agents** can support **coaching, impediment removal, Scrum events, Product Goal definition, Product Backlog management, and Scrum adoption**.
-- Additional responsibilities include **upholding Harness Engineering principles, managing knowledge, and continuously improving sdd-scrum**.
+- Additional responsibilities include **upholding Harness Engineering principles, managing knowledge, and continuously improving Scrum in SDD**.
 
 ### Scrum Events
 
@@ -411,12 +425,12 @@ As there is no current need for **workflows** at this stage, this folder remains
 
 
 
-**PART IV** sdd-scrum guide
-# **Part IV** sdd-scrum Guide
+**PART IV** Scrum in SDD guide
+# **Part IV** Scrum in SDD Guide
 
 ## Purpose
 
-This guide defines sdd-scrum by stating what stays, what is added, and what changes.
+This guide defines Scrum in SDD by stating what stays, what is added, and what changes.
 
 ## Audience
 
@@ -430,11 +444,11 @@ This guide is for both humans and AI agents.
 
 - **Keep**: classic Scrum concepts that remain valid.
 - **Add**: new concepts required by SDD under Harness Engineering principles.
-- **Modify**: classic Scrum concepts that change in sdd-scrum.
+- **Modify**: classic Scrum concepts that change in Scrum in SDD.
 
 ## Terminology
 
-- **sdd-scrum**: Scrum adapted for SDD under Harness Engineering principles.
+- **Scrum in SDD**: Scrum adapted for SDD under Harness Engineering principles.
 - **Spec**: the source of truth for behavior, constraints, and acceptance criteria.
 - **Harness**: the runtime system that governs agent execution.
 - **Rule**: a constraint on execution.
@@ -583,7 +597,7 @@ This guide is for both humans and AI agents.
 - The Definition of Done is implemented as a rule.
 - It may apply to tasks as well as Increments.
 
-## Minimum sdd-scrum setup
+## Minimum Scrum in SDD setup
 
 - One **Product Owner**
 - One part-time **Scrum Master**
