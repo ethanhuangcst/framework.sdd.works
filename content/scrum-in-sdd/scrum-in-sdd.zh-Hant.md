@@ -1,4 +1,4 @@
-# Scrum in SDD
+# Scrum in SDD3
 
 本文件定義 Scrum in SDD: 結合 Scrum 和規格驅動開發（Spec-Driven Development, SDD），在 Harness Engineering 原則下使用 Agentic Programming。
 

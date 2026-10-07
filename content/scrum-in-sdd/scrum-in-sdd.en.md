@@ -1,4 +1,89 @@
-# Scrum in SDD
+# Scrum in SDD1
+
+> Type: Core artifact of framework.sdd.works
+> as_of: 2026-10-04
+> [Definition](./sdd-scrum-practices.md#terminology-in-practice)
+
+**Author:** Ethan Huang
+
+© 2026 Ethan Huang
+
+---
+
+## Index
+
+- [Part I The 2020 Scrum Guide Summary](#part-i-the-2020-scrum-guide-summary)
+  - [Purpose of the Scrum Guide](#purpose-of-the-scrum-guide)
+  - [Scrum Definition](#scrum-definition)
+  - [Scrum Theory](#scrum-theory)
+    - [Transparency](#transparency)
+    - [Inspection](#inspection)
+    - [Adaptation](#adaptation)
+  - [Scrum Values](#scrum-values)
+  - [Scrum Team](#scrum-team)
+    - [Developers](#developers)
+    - [Product Owner](#product-owner)
+    - [Scrum Master](#scrum-master)
+  - [Scrum Events](#scrum-events)
+    - [The Sprint](#the-sprint)
+    - [Sprint Planning](#sprint-planning)
+    - [Daily Scrum](#daily-scrum)
+    - [Sprint Review](#sprint-review)
+    - [Sprint Retrospective](#sprint-retrospective)
+  - [Scrum Artifacts](#scrum-artifacts)
+    - [Product Backlog](#product-backlog)
+    - [Sprint Backlog](#sprint-backlog)
+    - [Increment](#increment)
+  - [End Note](#end-note)
+    - [People](#people)
+    - [Scrum Guide History](#scrum-guide-history)
+- [Part II Agentic Programming, Harness Engineering and Spec-Driven Development (SDD)](#part-ii-agentic-programming-harness-engineering-and-spec-driven-development-sdd)
+  - [Agentic Programming](#agentic-programming)
+  - [Harness Engineering](#harness-engineering)
+  - [Spec-Driven Development (SDD)](#spec-driven-development-sdd)
+  - [SDD under Harness Engineering Principles](#sdd-under-harness-engineering-principles)
+    - [Implementing Harness Engineering Principles with SDD](#implementing-harness-engineering-principles-with-sdd)
+    - [Integrating eXtreme Programming practices with SDD](#integrating-extreme-programming-practices-with-sdd)
+    - [Integrating Scrum with SDD](#integrating-scrum-with-sdd)
+    - [How humans collaborate with AI agents in this approach](#how-humans-collaborate-with-ai-agents-in-this-approach)
+- [Part III The Gap in Classic Scrum When Implementing Agentic Programming with SDD](#part-iii-the-gap-in-classic-scrum-when-implementing-agentic-programming-with-sdd)
+  - [SDD concepts that need to be added into scrum implementation](#sdd-concepts-that-need-to-be-added-into-scrum-implementation)
+    - [Rules](#rules)
+    - [Skills](#skills)
+    - [Agents](#agents)
+    - [Workflows](#workflows)
+    - [Knowledge](#knowledge)
+    - [Artifacts](#artifacts)
+  - [Scrum concepts that need to be modified in Scrum in SDD](#scrum-concepts-that-need-to-be-modified-in-scrum-in-sdd)
+    - [Scrum Team and Scrum Accountabilities](#scrum-team-and-scrum-accountabilities)
+    - [Scrum Events](#scrum-events)
+    - [Sprint Planning](#sprint-planning)
+    - [Scrum Artifacts](#scrum-artifacts)
+- [Part IV Scrum in SDD Guide](#part-iv-scrum-in-sdd-guide)
+  - [Purpose](#purpose)
+  - [Audience](#audience)
+  - [How to read this guide](#how-to-read-this-guide)
+  - [Terminology](#terminology)
+  - [KEEP - what remains unchanged](#keep-what-remains-unchanged)
+    - [Scrum theory](#scrum-theory)
+    - [Scrum values](#scrum-values)
+    - [Core accountabilities](#core-accountabilities)
+    - [Core artifacts](#core-artifacts)
+  - [ADD - what is added](#add-what-is-added)
+    - [Harness layers](#harness-layers)
+    - [Rules](#rules)
+    - [Skills](#skills)
+    - [Core Artifacts](#core-artifacts)
+    - [Framework Artifacts](#framework-artifacts)
+    - [Engineering Artifacts](#engineering-artifacts)
+    - [Pack files](#pack-files)
+    - [Knowledge](#knowledge)
+  - [MODIFY: What changes](#modify-what-changes)
+    - [Scrum Team and Scrum Accountabilities](#scrum-team-and-scrum-accountabilities)
+    - [Scrum Events](#scrum-events)
+    - [Scrum Artifacts](#scrum-artifacts)
+  - [Minimum Scrum in SDD setup](#minimum-scrum-in-sdd-setup)
+  - [Operating principles](#operating-principles)
 
 This document defines how Scrum is adopted in Spec-Driven Development, with Agentic Programming under Harness Engineering principles.
 
@@ -8,8 +93,6 @@ The Scrum Guide defines Scrum. This document does not replace it.
 - **Part II** names Agentic Programming, Harness Engineering, and Spec-Driven Development.
 - **Part III** states what classic Scrum does not cover in that setting.
 - **Part IV** is the definition: what stays, what is added, and what changes.
-
-
 
 # **Part I** The 2020 Scrum Guide Summary
 
@@ -32,6 +115,8 @@ Scrum applies to complex work beyond software. “Developers” refers to anyone
 
 People may apply patterns, processes, and insights within Scrum, but this Guide does not cover them because they are not defined in Scrum.
 
+[Back to top](#index)
+
 ## Scrum Definition
 
 Scrum is a lightweight framework that helps people, teams, and organizations create value through adaptive solutions to complex problems.
@@ -44,6 +129,8 @@ In short, Scrum requires a Scrum Master to foster an environment where:
 4. Repeat.
 
 Scrum is a simple, intentionally incomplete framework built on the collective intelligence of its users. Unlike a methodology, it allows users to add best practices as long as its principles are upheld.
+
+[Back to top](#index)
 
 ## Scrum Theory
 
@@ -69,11 +156,15 @@ If output is unacceptable, the team must adjust quickly to reduce waste.
 
 Adaptation requires empowered, self-managing teams. Scrum Teams should adapt as soon as they learn.
 
+[Back to top](#index)
+
 ## Scrum Values
 
 Commitment, Focus, Openness, Respect, and Courage
 
 These values guide the Scrum Team’s work, behavior, and decisions. When they are lived out, they build trust and bring transparency, inspection, and adaptation to life.
+
+[Back to top](#index)
 
 ## Scrum Team
 
@@ -118,6 +209,8 @@ Responsible for:
 - Ensuring effective Scrum events
 - Supporting Product Goal definition and Product Backlog management
 - Enabling Scrum adoption across the organization
+
+[Back to top](#index)
 
 ## Scrum Events
 
@@ -170,6 +263,8 @@ The Scrum Team reflects on the last Sprint and identifies improvements.
 
 Timeboxed to up to three hours for a one-month Sprint.
 
+[Back to top](#index)
+
 ## Scrum Artifacts
 
 Scrum artifacts represent work or value. They provide transparency and a shared basis for adaptation.
@@ -219,6 +314,8 @@ Only work that meets it becomes an Increment.
 
 It creates a shared understanding of completed work.
 
+[Back to top](#index)
+
 ## End Note
 
 Scrum is free and defined in this Guide. It is immutable: using only parts of Scrum is not Scrum. Scrum works as a container for other techniques, methodologies, and practices.
@@ -231,6 +328,8 @@ Many people contributed to Scrum. Among the earliest were Jeff Sutherland, Jeff 
 
 Ken Schwaber and Jeff Sutherland first presented Scrum publicly in 1995. The Scrum Guide documents Scrum as developed and refined by them over more than 30 years.
 
+[Back to top](#index)
+
 # **Part II** Agentic Programming, Harness Engineering and Spec-Driven Development (SDD)
 
 With **Agentic Programming** and **Spec-Driven Development**, under **Harness Engineering principles**, software delivery is fundamentally reshaped.
@@ -241,6 +340,8 @@ With **Agentic Programming** and **Spec-Driven Development**, under **Harness En
 
 **Agentic Programming** is a software development approach in which **AI agents** act not merely as passive code assistants, but as **active collaborators** in the engineering workflow: **planning, coding, testing, debugging, reviewing**, and sometimes operating software, with autonomy bounded by **human-defined goals, constraints, and oversight**.
 
+[Back to top](#index)
+
 ## Harness Engineering
 
 **Harness Engineering** is the discipline of designing the **runtime framework** that enables AI agents to operate **reliably, safely, and effectively** in real-world environments. It includes **tool integration, execution orchestration, context and memory management, permissions and guardrails, observability, and human oversight**.
@@ -250,6 +351,8 @@ With **Agentic Programming** and **Spec-Driven Development**, under **Harness En
 - **Context and memory**: controls what the agent knows and retains
 - **Permissions and guardrails**: constrain actions and reduce risk
 - **Observability and oversight**: support monitoring, evaluation, and human intervention
+
+[Back to top](#index)
 
 ## Spec-Driven Development (SDD)
 
@@ -263,6 +366,8 @@ With **Agentic Programming** and **Spec-Driven Development**, under **Harness En
 - **Clarify multi-agent work**: align planner, coder, reviewer, and tester on one source of truth.
 - **Reduce drift and ambiguity**: make constraints explicit.
 - **Improve automation**: generate code, tests, docs, and validation more easily.
+
+[Back to top](#index)
 
 ## SDD under Harness Engineering Principles
 
@@ -311,6 +416,8 @@ In **SDD**, **eXtreme Programming (XP)** practices can be embedded in the **harn
 - **Humans validate and supervise**: review outputs, resolve ambiguity, approve sensitive actions, and update the source of truth.
 - **AI provides feedback**: compare outcomes against the spec and surface gaps or failures.
 
+[Back to top](#index)
+
 # **Part III** The Gap in Classic Scrum When Implementing Agentic Programming with SDD
 
 When implementing **SDD** under **Harness Engineering principles**, gaps emerge that change the **Scrum definition**.
@@ -318,24 +425,23 @@ When implementing **SDD** under **Harness Engineering principles**, gaps emerge 
 ## SDD concepts that need to be added into scrum implementation
 
 ### Rules
-- **dod.mdc**: Definition of Done
-- **incremental-delivery.mdc**: Incremental Delivery
-- **realtime-status.mdc**: track status in real time and update **status.md** when each task is done
+- **sdd-dod.mdc**: Definition of Done; updates process files on close
+- **sdd-incremental-delivery.mdc**: Incremental Delivery
+- **sdd-realtime-status.mdc**: WIP checkpoints; keeps process files aligned while work is not Done
+- **friendly-language.mdc**: keep chat and Markdown readable for the user and for later agents
 
 ### Skills
-- **sdd-atdd**
-- **sdd-tdd**
-- **sdd-kickoff-project**
+- **atdd-expert**
 - **sdd-update-project**
-- **sdd-refine-pb**
+- **sdd-refine-backlog**
 - **sdd-plan-sprint**
-- **sdd-tracking**
 - **sdd-retrospective**
 - **sdd-close-sprint**
 - **sdd-audit-artifacts**
+- **sdd-review-status**
 - **sdd-update-specs**
-- **sdd-design**
-- **sdd-implement**
+- **sdd-spec-to-build**
+- **sdd-create-skill**
 
 ### Agents
 - **scrum-master**, in this service: **ethan**
@@ -348,16 +454,16 @@ As there is no current need for **workflows** at this stage, this folder remains
 - **knowledge**: knowledge learned from the project, default path: **{workspace-folder}/specs/knowledge**
 
 ### Artifacts
-- **Product Backlog**: **product-backlog.md**
-- **Sprint Backlog**: **sprint-backlog.md**
-- **Real-time status**: **status.md**
-- **Change management**: **change-log.md**
-- **Artifact path definition and project mapping**: **artifacts-map.md**
-- **Engineering artifacts templates**: **architecture.md; design.md; test.md; deployment.md**
+- **Core artifacts**: **scrum-in-sdd.md; sdd-scrum-practices.md; artifacts-map.json**
+- **Framework artifacts**: **product-backlog.md; sprint-backlog.md; status.md; changes-log.md**
+- **Engineering artifacts**: **architecture.md; module design, stories, and tests paths from artifacts-map.json ({stem}-* or design.md / stories.md / tests.md under the artifacts root); release.md; test-strategy.md; .secrets; issues-log.md**. Module paths come from `artifacts-map.json`. See `sdd-scrum-practices.md`.
+- **Pack files beside these groups**: **constants.json** (pack lookup on the client root); **.sdd-installed.json** (install ledger on the client root)
+
+[Back to top](#index)
 
 ## Scrum concepts that need to be modified in Scrum in SDD
 
-### Scrum Team
+### Scrum Team and Scrum Accountabilities
 - **Teams** can be much smaller: often one **Product Owner** and a few **full-stack engineers**, with one also serving as **Scrum Master**.
 - **Scrum roles** can include both **humans and AI agents**.
 - Traditional **Scrum Master** responsibilities can be largely delegated to **AI agents**.
@@ -391,15 +497,15 @@ As there is no current need for **workflows** at this stage, this folder remains
 #### Daily Scrum
 - The classic **Daily Scrum** might still be needed.
 - But more frequent **Inspection and adaptation** between human and agents can happen continuously in **real time**.
-- With the **realtime-status rule**, each completed task triggers a **small retrospective** and updates **status.md**.
+- With **sdd-dod.mdc**, closing a task or SBI runs the retrospective gate and updates **status.md** when the close applies.
 
 #### Sprint Review
 
 #### Sprint Retrospective
-- **Retrospective** has three forms; the latter two are captured as ADR or Knowledge by the retrospective skill.
+- **Retrospective** has three forms; the latter two are captured as ADR or Knowledge by the **sdd-retrospective** skill.
 1. **Sprint-end**: the classic human-human retrospective.
 2. **On demand**: a human-agent retrospective initiated by a human.
-3. **By rule**: an agent-agent retrospective triggered before work is marked done.
+3. **By rule**: an agent-agent retrospective triggered before work is marked done. The record names the incident that fired the rule, such as `feature-01 done`.
 
 - **Retrospectives** have **four triggers**:
 1. **Sprint-end**.
@@ -420,17 +526,18 @@ As there is no current need for **workflows** at this stage, this folder remains
 - It is created by and for **Developers**, both **humans and agents**.
 
 #### Commitment: Definition of Done
-- The **Definition of Done** is a **rule**: **dod.mdc**.
+- The **Definition of Done** is a **rule**: **sdd-dod.mdc**.
 - It applies not only to **Increments**, but also to **all tasks**.
 
+[Back to top](#index)
 
-
-**PART IV** Scrum in SDD guide
 # **Part IV** Scrum in SDD Guide
 
 ## Purpose
 
 This guide defines Scrum in SDD by stating what stays, what is added, and what changes.
+
+[Back to top](#index)
 
 ## Audience
 
@@ -440,11 +547,15 @@ This guide is for both humans and AI agents.
 - **AI agents** execute within defined constraints.
 - Both use the same rules, artifacts, and terminology.
 
+[Back to top](#index)
+
 ## How to read this guide
 
 - **Keep**: classic Scrum concepts that remain valid.
 - **Add**: new concepts required by SDD under Harness Engineering principles.
 - **Modify**: classic Scrum concepts that change in Scrum in SDD.
+
+[Back to top](#index)
 
 ## Terminology
 
@@ -457,10 +568,10 @@ This guide is for both humans and AI agents.
 - **Workflow**: a defined sequence of actions and handoffs.
 - **Knowledge**: retained project context used in execution.
 - **Artifact**: a persistent project document used to plan, execute, or inspect work.
-- **PBI**: Product Backlog Item.
-- **SBI**: Sprint Backlog Item.
+- **PBI**, **SBI**, **Feature**, **Task**, **OGT**, **MVP**: [Terminology in practice](./sdd-scrum-practices.md#terminology-in-practice).
 - **Increment**: usable output that meets the Definition of Done.
-- **OGT**: on-going tasks:different from the Sprint Backlog Items (SBIs) in sprint-backlog.md. They are the samller tasks created when AI agents are executing the SBI. Many of them are created by agents in PLAN mode and rely on agents to manage them, or created by human as the temporary tasks.
+
+[Back to top](#index)
 
 ## **KEEP** - what remains unchanged
 
@@ -486,6 +597,8 @@ This guide is for both humans and AI agents.
 - The **Sprint Backlog** remains the source of current Sprint work.
 - The **Increment** remains the unit of delivered value.
 
+[Back to top](#index)
+
 ## **ADD** - what is added
 
 ### Harness layers
@@ -496,48 +609,61 @@ This guide is for both humans and AI agents.
 - **Knowledge**: ground execution in context.
 
 ### Rules
-- **dod.mdc**: Definition of Done.
-- **incremental-delivery.mdc**: incremental delivery policy.
-- **realtime-status.mdc**: real-time status update policy.
+- **sdd-dod.mdc**: Definition of Done; process writes on close.
+- **sdd-incremental-delivery.mdc**: incremental delivery policy.
+- **sdd-realtime-status.mdc**: WIP process sync; draft, confirm, write while work is not Done.
+- **friendly-language.mdc**: readable chat and Markdown for the user and for later agents.
 
 ### Skills
-- **sdd-atdd**
-- **sdd-tdd**
-- **sdd-kickoff-project**
+- **atdd-expert**
 - **sdd-update-project**
-- **sdd-refine-pb**
+- **sdd-refine-backlog**
 - **sdd-plan-sprint**
-- **sdd-tracking**
 - **sdd-retrospective**
 - **sdd-close-sprint**
 - **sdd-audit-artifacts**
+- **sdd-review-status**
 - **sdd-update-specs**
-- **sdd-design**
-- **sdd-implement**
+- **sdd-spec-to-build**
+- **sdd-create-skill**
+
+### Core Artifacts
+These are the SDD core artifacts. They are not the Scrum core artifacts under KEEP (Product Backlog, Sprint Backlog, and Increment).
+- **scrum-in-sdd.md**: names and meaning. Stays on the client root.
+- **sdd-scrum-practices.md**: what, how, and when. Stays on the client root.
+- **artifacts-map.json**: where this project's artifacts live. Sits at the workspace root.
 
 ### Framework Artifacts
-- **status.md**: real-time status.
-- **change-log.md**: change history.
-- **artifacts-map.md**: artifact mapping.
-- **product-backlog.md**: Product Backlog
-- **sprint-backlog.md**: Sprint Backlog
-
+- **product-backlog.md**: Product Backlog.
+- **sprint-backlog.md**: Sprint Backlog.
+- **status.md**: project snapshot; updated on DoD close and on WIP checkpoints (`sdd-realtime-status.mdc`).
+- **changes-log.md**: change history.
 
 ### Engineering Artifacts
 - **architecture.md**: architecture spec.
-- **{model_name}-stories**: user stories and acceptance criterias
-- **{model_name}-design.md**: design spec.
-- **{model_name}-test.md**: test spec.
-- **deployment.md**: deployment spec.
-- **.secrets**: file to store secrets.
+- **{stem}-stories.md**: user stories and acceptance criteria.
+- **{stem}-design.md**: design spec.
+- **{stem}-tests.md**: test spec.
+- **release.md**: local startup and go-live order.
+- **test-strategy.md**: product-level test strategy.
+- **.secrets**: dotenv-shaped registry (`NAME=` empty); `#` comments for where values live. No secret values in git.
+- **issues-log.md**: defect record. It is also one of the five process files the audit opens.
+
+### Pack files
+These are not project artifacts. They are not in any group above.
+- **constants.json**: pack lookup for path names, skill keys, and rule keys, on the client root.
+- **.sdd-installed.json**: install ledger on the client root. The installer writes it. `pack_complete: true` means the pack copy finished.
 
 ### Knowledge
 - **ADR**: Architecture Decision Record.
 - **knowledge/**: project knowledge learned during execution.
+- When the map includes `adr` or `knowledge`, those keys name the directory roots for those trees.
+
+[Back to top](#index)
 
 ## **MODIFY**: What changes
 
-### Scrum Team
+### Scrum Team and Scrum Accountabilities
 - Teams may be smaller.
 - Scrum roles may include humans and AI agents.
 - The Scrum Master also upholds Harness Engineering principles.
@@ -588,6 +714,7 @@ This guide is for both humans and AI agents.
 #### Sprint Backlog
 - The Sprint Backlog may be maintained as a Markdown artifact.
 - It may be updated continuously by humans and AI agents.
+- **Unplanned PBIs** lists product backlog items with no sprint assignment. That section sits after the last sprint table in `sprint-backlog.md`. See `sdd-scrum-practices.md`.
 
 #### Increment
 - An Increment remains usable output that meets the Definition of Done.
@@ -596,6 +723,8 @@ This guide is for both humans and AI agents.
 #### Commitment: Definition of Done
 - The Definition of Done is implemented as a rule.
 - It may apply to tasks as well as Increments.
+
+[Back to top](#index)
 
 ## Minimum Scrum in SDD setup
 
@@ -608,6 +737,8 @@ This guide is for both humans and AI agents.
 - Defined human approval boundaries
 - Defined agent execution boundaries
 
+[Back to top](#index)
+
 ## Operating principles
 - Spec before implementation.
 - Rules before autonomy.
@@ -617,3 +748,5 @@ This guide is for both humans and AI agents.
 - Inspection happens continuously.
 - Retrospective drives improvement.
 - Write rules so both humans and AI agents can follow them.
+
+[Back to top](#index)
