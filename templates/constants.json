@@ -1,0 +1,29 @@
+{
+  "agents_dir": "agents",
+  "skills_dir": "skills",
+  "rules_dir": "rules",
+  "workflows_dir": "workflows",
+  "templates_dir": "templates",
+  "instructions_url": "https://framework.sdd.works/instructions",
+  "skills": {
+    "skill_update_project": "sdd-update-project",
+    "skill_refine_pb": "sdd-refine-backlog",
+    "skill_plan_sprint": "sdd-plan-sprint",
+    "skill_retrospective": "sdd-retrospective",
+    "skill_build_agent": "sdd-build-agent",
+    "atdd-expert": "atdd-expert",
+    "skill_audit_artifacts": "sdd-audit-artifacts",
+    "skill_get_status": "sdd-review-status",
+    "sdd-update-specs": "sdd-update-specs",
+    "sdd-spec-to-build": "sdd-spec-to-build",
+    "skill_create_skill": "sdd-create-skill",
+    "skill_create_rule": "sdd-create-rule"
+  },
+  "rules": {
+    "dod": "sdd-dod.mdc",
+    "incremental-delivery": "sdd-incremental-delivery.mdc",
+    "realtime-status": "sdd-realtime-status.mdc",
+    "friendly-language": "friendly-language.mdc",
+    "pack-authoring": "sdd-pack-authoring.mdc"
+  }
+}
