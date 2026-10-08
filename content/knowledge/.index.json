@@ -1,5 +1,10 @@
 {
   "version": 1,
+  "labels": {
+    "en": "Knowledge",
+    "zh-Hans": "知识",
+    "zh-Hant": "知識"
+  },
   "entries": [
     {
       "kind": "file",
@@ -30,16 +35,6 @@
         "zh-Hant": "call-skills/call-skills.zh-Hant.md"
       },
       "open": "same_tab"
-    },
-    {
-      "kind": "folder",
-      "id": "archived",
-      "labels": {
-        "en": "Archived",
-        "zh-Hans": "归档",
-        "zh-Hant": "封存"
-      },
-      "path": "archived"
     }
   ]
 }
