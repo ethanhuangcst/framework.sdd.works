@@ -1,10 +1,5 @@
 {
   "version": 1,
-  "labels": {
-    "en": "Knowledge",
-    "zh-Hans": "知识",
-    "zh-Hant": "知識"
-  },
   "entries": [
     {
       "kind": "file",
