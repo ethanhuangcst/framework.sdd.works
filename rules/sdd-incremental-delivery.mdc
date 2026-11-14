@@ -1,5 +1,5 @@
 ---
-description: Incremental delivery. Finish one backlog item before starting the next.
+description: Incremental delivery. Finish one backlog item before starting the next, and raise a conflicting request instead of silently complying.
 alwaysApply: true
 ---
 
@@ -23,3 +23,11 @@ The item is finished on the board only when [`sdd-dod.mdc`](./sdd-dod.mdc) passe
 - When a blocker stops this item, tell the user what blocks it and wait.
 - A new requirement becomes a new backlog item after the user confirms it. It is not added to the current item.
 - Do not bundle two items into one implementation pass.
+
+## Conflict handling
+
+- When a user request conflicts with this rule (for example "finish the whole MVP at once" or "develop several features in parallel"), stop, tell the user the request conflicts with this rule, and confirm how to proceed.
+- Offer two options: follow this rule item by item, or the user explicitly overrides this rule (record that confirmation). Until explicitly confirmed, default to this rule.
+- Never silently comply with a conflicting request; never silently refuse it.
+
+Wording checks: [friendly-language.mdc](./friendly-language.mdc).
